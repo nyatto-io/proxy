@@ -85,6 +85,6 @@ app.post('/manga/mangakakalot/chapters', async (req, res) => {
 	res.json(urls);
 });
 
-const port = process.env.APP_PORT || 5000;
+const port = process.env.APP_PORT || process.env.PORT;
 
 app.listen(port, () => log(`Server listening at port: ${port}`));
