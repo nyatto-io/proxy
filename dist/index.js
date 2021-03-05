@@ -152,5 +152,5 @@ app.post('/manga/mangakakalot/chapters', function (req, res) { return __awaiter(
         }
     });
 }); });
-var port = process.env.APP_PORT || 5000;
+var port = process.env.APP_PORT || process.env.PORT;
 app.listen(port, function () { return helpers_1.log("Server listening at port: " + port); });
